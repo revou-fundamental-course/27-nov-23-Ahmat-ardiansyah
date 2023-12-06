@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BANGUN DATAR : Segitiga</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   <h1 align="center">Selamat Datang Di Katik</h1>
+   <P align="center">Katik merupakan singkatan dari kalkulator hitung segitiga.
+    Aplikasi ini digunakan untuk mempermudah kita mencari luas dan keliling segitiga.</P>
+   <center><img src="asset/segitiga.jpg"/></center>
+   <P align="left">Rumus untuk mencari Keliling dan Luas Segitiga</P>
+   <h4>L= 1/2 a x t</h4>
+   <h4>K= Sa + Sb + Sc</h4>
+   <p>Dimana :</p>
+   <p>L = Luas segitiga   </p>
+   <p>K = Keliling segitiga</p>
+   <p>S = Sisi yang terdiri atas Sisi a , b , dan c (sa , sb , sc)</p>
+   <p>a = alas segitiga (= Sa)</p>
+   <p>t = tinggi segitiga</p>
+
+	
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Segitiga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Masukan alas</td>
+                    </tr>
+                    <tr>
+                        <td ><input type="text" id="ipt_alas"></td>
+                    </tr>
+                    <tr>
+                        <td>Masukan tinggi</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="ipt_tinggi"></td>
+                    </tr>
+                    <tr >
+                        <td><button onclick="hitung()">Hitung</button></td>
+                       
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Luas segitiga</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="opt_luas" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Keliling segitiga</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="opt_keliling" disabled></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="btn btn-primary" onclick="javascript:refresh();">Reset</button>
+        </div>
+        
+
+    </form>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
