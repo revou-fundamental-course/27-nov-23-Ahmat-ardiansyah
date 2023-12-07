@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>BANGUN DATAR : Segitiga</title>
+	<title>Katik ( Aplikasi hitung segitiga)</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
    <h1 align="center">Selamat Datang Di Katik</h1>
-   <P align="center">Katik merupakan singkatan dari kalkulator hitung segitiga.
+   <div><P align="center">Katik merupakan singkatan dari kalkulator hitung segitiga.
     Aplikasi ini digunakan untuk mempermudah kita mencari luas dan keliling segitiga.</P>
    <center><img src="asset/segitiga.jpg"/></center>
    <P align="left">Rumus untuk mencari Keliling dan Luas Segitiga</P>
@@ -18,13 +18,13 @@
    <p>S = Sisi yang terdiri atas Sisi a , b , dan c (sa , sb , sc)</p>
    <p>a = alas segitiga (= Sa)</p>
    <p>t = tinggi segitiga</p>
+   </<div>
 
-	
         <div>
             <table>
                 <thead>
                     <tr>
-                        <th>Segitiga</th>
+                        <th>Hitung Luas & Keliling Segitiga</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,16 +32,16 @@
                         <td>Masukan alas</td>
                     </tr>
                     <tr>
-                        <td ><input type="text" id="ipt_alas"></td>
+                        <td ><input type="number" id="ipt_alas" placeholder="input tidak boleh kosong" required="required"></td>
                     </tr>
                     <tr>
                         <td>Masukan tinggi</td>
                     </tr>
                     <tr>
-                        <td><input type="text" id="ipt_tinggi"></td>
+                        <td><input type="number" id="ipt_tinggi" placeholder="input tidak boleh kosong" required="required"></td>
                     </tr>
                     <tr >
-                        <td><button onclick="hitung()">Hitung</button></td>
+                        <td align="center"><button class="btn-hitung" onclick="hitung()">Hitung</button></td>
                        
                     </tr>
                 </tbody>
@@ -50,21 +50,25 @@
                         <td>Luas segitiga</td>
                     </tr>
                     <tr>
-                        <td><input type="text" id="opt_luas" disabled></td>
+                        <td><input class="output" type="number" id="opt_luas" disabled></td>
                     </tr>
                     <tr>
                         <td>Keliling segitiga</td>
                     </tr>
                     <tr>
-                        <td><input type="text" id="opt_keliling" disabled></td>
+                        <td><input class="output" type="number" id="opt_keliling" disabled></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><button class="btn-reset" onclick="javascript:refresh();">Reset</button></td>
                     </tr>
                 </tfoot>
-            </table>
-            <button class="btn btn-primary" onclick="javascript:refresh();">Reset</button>
+            </table>        
+
         </div>
         
 
     </form>
+    
 
 <script type="text/javascript" src="js/script.js"></script>
 </body>

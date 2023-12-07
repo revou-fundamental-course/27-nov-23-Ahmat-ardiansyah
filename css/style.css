@@ -1,3 +1,7 @@
+h1{
+	padding-bottom: 2px;
+	border-bottom: grey 1px solid;
+  }
 div	{
 	margin: auto ;
 	width: 400px;
@@ -9,15 +13,15 @@ table {
 	width: 100%;
 }
 th{
-	background-color: #f44336;
-	padding: 5px;
+	background-color: #9ef7e1;
+	padding: 8px;
 	border: none;
-	font-size: 16px;
-}
+	font-size: 20px;
+	}
 td{
 	border: none;
 }
-input[type=text]{
+input[type=number]{
 	padding: 10px;
 	width: 380px;
 	border-style: solid;
@@ -27,13 +31,25 @@ input[type=text]{
 input[type=text]:disabled{
 	background-color: white;
 }
-button {
-	width: 100%;
+.btn-hitung {
+	width: 30%;
 	height: 40px;
-	background-color: #4CAF50;
-    border: none;
-    color: white;
+	background-color: hsl(67, 72%, 87%);
+    color: rgb(1, 1, 1);
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
+	position:inherit;
+	
+}
+.btn-reset{
+	width: 30%;
+	height: 40px;
+	background-color: hsl(29, 73%, 87%);
+    color: rgb(1, 1, 1);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+	position:inherit;
+	
 }
